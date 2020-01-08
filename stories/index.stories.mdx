@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../aq-cookie-banner.js';
+
+<Meta 
+  title="AqCookieBanner"
+  parameters={{
+    component: "aq-cookie-banner",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# AqCookieBanner
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add aq-cookie-banner
+```
+
+```js
+import 'aq-cookie-banner/aq-cookie-banner.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <aq-cookie-banner></aq-cookie-banner>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="aq-cookie-banner" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <aq-cookie-banner .title=${'Hello World'}></aq-cookie-banner>
+  `}
+</Story>
